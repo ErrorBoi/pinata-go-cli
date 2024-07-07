@@ -1,17 +1,18 @@
-package main
+package pinata
 
 import (
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/schollz/progressbar/v3"
 	"io"
 	"log"
 	"mime/multipart"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/schollz/progressbar/v3"
 )
 
 func Upload(filePath string, version int, name string, cidOnly bool) (UploadResponse, error) {

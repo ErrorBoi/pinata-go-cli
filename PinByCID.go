@@ -1,4 +1,4 @@
-package main
+package pinata
 
 import (
 	"bytes"
@@ -61,4 +61,3 @@ func PinByCID(cid string, name string) (PinByCIDResponse, error) {
 
 	return response, nil
 }
-
